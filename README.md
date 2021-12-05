@@ -3,7 +3,7 @@
 A simple Social Media structure where the users can share blogs and arts. Gain followers and Follow people Around! 
 
 
-#Project Files 
+# Project Files 
 
 Go to the master branch to get project files.
 
