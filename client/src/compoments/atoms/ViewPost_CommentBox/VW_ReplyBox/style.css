@@ -1,0 +1,50 @@
+.viewpost-reply-box-root {
+  width: 80%;
+  transition: transform 0.5s ease-in-out;
+}
+.reply-box-block-one {
+  width: 100%;
+}
+.reply-box-text-area {
+  width: 100%;
+  height: 80px;
+  outline: none;
+  border: none;
+  word-wrap: break-word;
+  background-color: white;
+  border-radius: 8px;
+  border: 1.5px solid rgb(187, 187, 187);
+  resize: none;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 900;
+  padding: 1%;
+}
+.reply-box-button-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+.view-post-reply-button {
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+  padding: 1%;
+  border: 1.5px solid rgb(202, 202, 202);
+  outline: none;
+  border-radius: 20px;
+  background-color: rgb(235, 230, 230);
+}
+.view-post-reply-button:hover {
+  color: white;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 900px) {
+  .viewpost-reply-box-root {
+    width: 100%;
+  }
+  .reply-box-text-area {
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+.each-lib-root {
+  width: inherit;
+  height: 150px;
+  display: flex;
+  margin: 3% 0;
+  cursor: pointer;
+  position: relative;
+}
+.each-lib-root:hover .lib-content-btns {
+  visibility: visible;
+}
+
+.lib-post-image {
+  width: 250px;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center;
+}
+
+.lib-detail-box {
+  margin: 0 2%;
+  padding: 1%;
+}
+
+.lib-detail-box-title {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.lib-sub-detail-box {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: grey;
+  padding: 1% 0;
+  flex-wrap: wrap;
+}
+
+.lib-detail-box-desc {
+  height: inherit;
+  text-align: left;
+  text-indent: 1%;
+  text-overflow: ellipsis;
+}
+.lib-detail-box-desc {
+  width: inherit;
+  height: inherit;
+  padding: 5% 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lib-post-desc {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.lib-content-btns {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  visibility: hidden;
+}
+
+.delete-lib-content-btn:hover::after {
+  content: "Remove";
+  position: absolute;
+  bottom: -100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20%;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 900px) {
+  .each-lib-root {
+    width: 100%;
+    display: block;
+    height: fit-content;
+  }
+  .lib-post-image {
+    width: 100%;
+    height: 200px;
+  }
+  .lib-content-btns {
+    position: relative;
+    visibility: visible;
+    margin: 0 5%;
+  }
+  .delete-lib-content-btn:hover::after {
+    right: -100%;
+  }
+}

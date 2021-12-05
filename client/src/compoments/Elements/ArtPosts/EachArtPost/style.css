@@ -1,0 +1,110 @@
+.each-art-root {
+  position: relative;
+  height: 350px;
+  width: 370px;
+  overflow: hidden;
+}
+.each-art-root:hover .each-art-container {
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.each-art-container {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to bottom, transparent, rgba(15, 15, 15, 0.1));
+  transition: all 0.6s ease-in-out;
+  background: linear-gradient(to bottom, transparent, black);
+}
+.each-art-root:hover .image-display {
+  transform: scale(110%);
+}
+.image-display {
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+}
+.image-details {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 5%;
+  transition: all 0.6s ease-in-out;
+}
+
+.image-personal-detail-box {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.each-art-details {
+  margin: 0 5% 0 5%;
+  font-family: "Open Sans", -apple-system;
+}
+
+.each-art-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: all 0.6s ease-in-out;
+  color: white;
+}
+
+.each-art-details .artist-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+  /* transform: translateY(500%); */
+  color: white;
+}
+.each-art-details .artist-role {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  transition: all 0.8s ease-in-out;
+  /* transform: translateY(500%); */
+  color: white;
+}
+.artist-avatar {
+  /* transform: translateY(500%); */
+  transition: all 0.9s ease-in-out;
+}
+
+.each-art-root:hover .artist-avatar {
+  transform: translateY(0%);
+}
+
+.each-art-root:hover .artist-name {
+  transform: translateY(0%);
+}
+.each-art-root:hover .artist-role {
+  transform: translateY(0%);
+}
+
+@media only screen and (max-width: 600px) {
+  .each-art-root {
+    width: inherit;
+    position: relative;
+    margin-bottom: 5%;
+  }
+  .image-display {
+    width: 100%;
+  }
+  .image-details {
+    z-index: 1;
+    position: relative;
+    background-color: black;
+    color: white;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,172 @@
+.view-art-left-root {
+  width: 100%;
+  height: 100vh;
+  padding: 2%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.view-art-left-root::-webkit-scrollbar {
+  width: 0.7rem;
+}
+.view-art-left-root::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.view-art-left-root::-webkit-scrollbar-thumb {
+  background-color: #dcdcdd;
+  border-radius: 20px;
+  border: none;
+}
+
+.view-art-left-root::-webkit-scrollbar-track-piece:start {
+  margin-top: 1rem;
+}
+.view-art-left-root::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 1rem;
+}
+.view-art-imager-holder {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2%;
+}
+.view-art-imager-holder:hover {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
+.view-art-imager-holder:hover .view-art-image-description-box {
+  transform: translateX(0%);
+}
+
+.view-art-image {
+  position: relative;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  display: block;
+  z-index: -1;
+  border-radius: 2%;
+}
+
+.view-art-image-description-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+.view-art-image-description-box h5 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  word-wrap: break-word;
+}
+.view-art-image-description-box p {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  word-wrap: break-word;
+}
+
+.view-art-image-creator-desc-box {
+  padding: 5%;
+  height: 20%;
+  top: 0;
+  right: 0;
+}
+.art-name-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.art-name {
+  text-align: end;
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 2%;
+}
+.art-role {
+  text-align: end;
+  color: rgb(49, 49, 49);
+  font-size: 0.8em;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 900;
+}
+.art-profile-image {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 5% 0 5%;
+  text-align: end;
+}
+
+.art-date {
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: ligher;
+  color: black;
+  margin: 2% 0 2% 0;
+}
+
+.art-static-texts {
+  font-family: "Montserrat", sans-serif;
+  color: #444444;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-left: 3px solid #da0037;
+  padding: 1%;
+}
+
+.right-comp-caption-box {
+  text-align: end;
+  height: fit-content;
+  padding: 10%;
+}
+
+.right-comp-root {
+  padding: 5%;
+}
+.right-comp-block-one {
+  background-color: white;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.right-comp-block-two,.right-comp-block-three{
+  background-color: white;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.right-comp-image-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2%;
+  color: black;
+}
+.art-caption,
+.art-tags {
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  text-align: start;
+  padding: 5%;
+  font-weight: 500;
+  color: black;
+}
+.art-tags {
+  font-size: 0.8rem;
+}
+
+

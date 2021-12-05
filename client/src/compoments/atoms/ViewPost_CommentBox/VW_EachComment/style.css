@@ -1,0 +1,90 @@
+.view-post-each-comment-root {
+  padding: 2%;
+}
+.each-comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.each-comment-header-left {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.each-comment-user-name-box {
+  margin: 0 2%;
+}
+.each-comment-user-name:hover {
+  text-decoration: 1px underline #2d71a5;
+}
+.each-comment-user-avatar {
+  height: 32px;
+  width: 32px;
+}
+.each-comment-user-name {
+  line-height: 1.35;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: black;
+  cursor: pointer;
+}
+.each-comment-user-role {
+  line-height: 1;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #696969;
+  cursor: default;
+}
+.each-comment-header-right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.commented-at {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(163, 162, 162);
+  margin: 0 1% 0 1%;
+}
+.each-comment-body {
+  width: 100%;
+}
+.each-comment-comment-text {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: black;
+  padding: 2%;
+}
+.each-comment-footer {
+  display: flex;
+  padding: 0 2% 0 2%;
+  align-items: center;
+}
+.each-comment-footer p {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: rgb(161, 161, 161);
+}
+.each-comment-footer-icons {
+  font-size: 0.9rem;
+  color: #696969;
+}
+.each-comment-reply-box {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .each-comment-user-name-box {
+    margin: 0 4%;
+  }
+  .each-comment-comment-text {
+    padding: 4%;
+  }
+}

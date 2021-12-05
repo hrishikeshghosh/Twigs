@@ -1,0 +1,18 @@
+.library-page-root {
+  padding: 2% 5%;
+}
+
+.lib-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+  .lib-heading{
+    margin: 5% 0;
+  }
+  .library-page-root{
+    padding-bottom: 10%;
+  }
+}

@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+.auth_root {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background: url("https://res.cloudinary.com/dwtjde0mg/image/upload/v1638678010/login_bg1_vndvra.png");
+}
+.sign-up-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)),
+    rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+}
+.auth-bar {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+.auth-box-root {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.auth-app-logo {
+  height: 100%;
+  width: 100%;
+  max-width: 25px;
+  max-height: 25px;
+  margin: 0 1% 0 1%;
+}
+.app-name {
+  font-family: "Patrick Hand", cursive;
+  color: #662482;
+  font-size: 2.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+.home-redirector {
+  outline: none;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 12px;
+  background: rgba(225, 225, 225, 0.1);
+  color: white;
+  font-weight: 900;
+}
+.home-redirector:hover {
+  background: white;
+  color: black;
+}
+.auth-box-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.auth-box {
+  width: 400px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.auth-header-text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 8px 0 8px 0;
+  font-size: 1.2rem;
+}
+.auth-header-intro {
+  text-align: center;
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: grey;
+}
+
+.g-auth {
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+.g-auth-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.g-auth:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.auth-field-input-grid {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 0;
+  padding: 0px 8px 0px 8px;
+  border: 1.5px solid #d6cfcf;
+  border-radius: 5px;
+  flex-grow: 1;
+  transition: 0.5s;
+}
+.auth-icons {
+  color: grey;
+}
+.auth-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  margin: 4px;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgb(250, 250, 250);
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  color: black;
+}
+.auth-field-input-grid:hover {
+  border: 1.5px solid #929292;
+  background: white;
+}
+.auth-field-input-grid:focus-within {
+  border: 1.5px solid #c68b59;
+  background-color: white;
+}
+
+.auth-field::placeholder {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 700;
+  color: rgb(131, 130, 130);
+}
+.jwt-auth-button {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: none;
+  background-color: #402218;
+  border-radius: 5px;
+  font-family: "Open Sans", -apple-system;
+  font-weight: bolder;
+  color: white;
+}
+.jwt-auth-button:hover {
+  background-color: #865439;
+}
+.auth-switcher {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 8px 0 8px 0;
+}
+.auth-switcher-header {
+  font-size: 0.8rem;
+  font-family: "Open Sans", -apple-system;
+  color: rgb(105, 104, 104);
+  font-weight: 500;
+}
+.auth-switcher-link {
+  font-size: 0.8rem;
+  font-family: "Open Sans", -apple-system;
+  color: #d83a56;
+  cursor: pointer;
+}
+.auth-switcher-link:hover {
+  text-decoration: underline;
+  color: #da0037;
+}
+.pasword-authenticator-text {
+  font: 0.7rem "Open Sans", -apple-system;
+  margin-bottom: 8px;
+  color: gray;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  color: rgb(204, 204, 204);
+  font-size: 0.5rem;
+  font-family: "Open Sans", -apple-system;
+}
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(204, 204, 204);
+}
+
+.auth-error-box {
+  display: flex;
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+.auth-error-icon {
+  padding: 10px;
+  background-color: #da0037;
+  margin: 0;
+}
+.auth-error-detail {
+  flex-grow: 1;
+  width: 100%;
+  background-color: white;
+  border-right: 5px solid #da0037;
+}
+.auth-error-desc {
+  margin: 4px 16px 4px 16px;
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.8rem;
+  color: #666565;
+  text-align: justify;
+}
+.auth-error-heading {
+  margin: 4px 16px 4px 16px;
+  font-family: "Open Sans", -apple-system;
+  color: #da0037;
+  font-weight: 900;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .auth-box-container {
+    width: 100%;
+    height: 100%;
+  }
+  .auth-box {
+    width: inherit;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

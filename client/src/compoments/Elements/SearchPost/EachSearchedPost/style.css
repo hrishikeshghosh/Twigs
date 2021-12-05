@@ -1,0 +1,117 @@
+.each-search-post-root {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2%;
+}
+.search-media-container {
+  height: 500px;
+  width: inherit;
+}
+.search-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.search-tags-box {
+  padding: 3% 0;
+  height: fit-content;
+  width: inherit;
+  display: flex;
+  word-break: break-all;
+}
+.search-title-box {
+  width: inherit;
+  height: 60%;
+  background-color: #000;
+  padding: 5%;
+  position: relative;
+}
+.search-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.search-author {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.search-createdAt {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.search-tags {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: whitesmoke;
+  margin-right: 2%;
+}
+.search-static-texts {
+  width: max-content;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  margin: 0 1%;
+  font-size: small;
+}
+.search-like-box {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3% 5%;
+}
+.search-like-texts {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: whitesmoke;
+  margin: 0 2%;
+}
+.search-overview-box {
+  width: inherit;
+  height: inherit;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+  padding: 3%;
+
+  text-align: left;
+}
+.search-go-to-post-button {
+  padding: 2% 5%;
+  margin: 0 5%;
+  background-color: #334756;
+  border: none;
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+.search-go-to-post-button:hover {
+  background-color: #082032;
+}
+
+@media only screen and (max-width: 900px) {
+  .each-search-post-root {
+    height: fit-content;
+  }
+  .search-like-box {
+    position: relative;
+  }
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.card {
+  max-height: 600px;
+  height: 100%;
+  width: 220px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.34);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.34);
+  box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.34);
+  position: relative;
+}
+
+.card-header {
+  max-height: 250px;
+  height: 250px;
+  /* background-position: center;
+  background-size: cover; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.card-desc-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 12px;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  background-color: black;
+  color: white;
+}
+.card-desc-box h5 {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+}
+.card-desc-box p {
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  font-weight: 400;
+
+  padding: 8px;
+}
+
+.card-header:hover .card-desc-box {
+  transform: translateX(0%);
+}
+
+.card-title-box {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.card-title {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  color: white;
+}
+.card-date {
+  font-size: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-footer {
+  width: 100%;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+}
+.card-avatar {
+  width: 100%;
+  height: 25px;
+  width: 25px;
+}
+.card-footer-title {
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-left: 8px;
+}
+.card-username {
+  width: 100%;
+  color: white;
+  font-family: "Open Sans", -apple-system;
+  font-weight: 900;
+  font-size: 0.7rem;
+  line-height: 100%;
+  text-align: left;
+}
+.card-role {
+  width: 100%;
+  color: rgb(230, 227, 227);
+  font-family: "Open Sans", -apple-system;
+  font-weight: 500;
+  font-size: 0.6rem;
+  margin: 2% 0 2% 0;
+}
+.card-views-count-box {
+  display: flex;
+  align-items: center;
+  padding: 3% 0;
+}
+.card-like-icon {
+  font-size: 0.7rem;
+  margin: 0 5% 0 5%;
+}
+.card-views-count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.card-views-static {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 3%;
+}
+
+.menu-options-holder {
+  height: fit-content;
+  width: inherit;
+  z-index: 2;
+  /* bottom: 10; */
+  /* position: relative; */
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-date {
+    font-size: 0.8rem;
+  }
+  .card-username {
+    font-size: 1.1rem;
+  }
+  .card-role {
+    font-size: 0.8rem;
+  }
+  .card-like-icon {
+    font-size: 1.1rem;
+  }
+}

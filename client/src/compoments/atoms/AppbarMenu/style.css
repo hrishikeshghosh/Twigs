@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+.appbar-menu-background-active {
+  position: fixed;
+  width: inherit;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  padding: 0;
+}
+
+.appbar-menu-root {
+  width: 25%;
+  height: 100vh;
+  background-color: rgba(245, 243, 243);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.appbar-menu-grp {
+  margin: 5%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+}
+
+.appbar-menu-divider {
+  margin: 8px;
+}
+
+.appbar-menu-profile {
+  display: flex;
+  align-items: center;
+  padding: 10% 5%;
+}
+
+.appbar-menu-routes {
+  display: flex;
+  align-items: center;
+  /* padding: 8px 16px 8px 16px; */
+  cursor: pointer;
+  padding: 8% 5%;
+}
+
+.appbar-menu-routes:hover {
+  background-color: #d7eaf6;
+}
+
+.goto-nest-link {
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #2d71a5;
+  margin-top: 2%;
+  padding: 3%;
+  border: 2px solid #2d71a5;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+.goto-nest-link:hover {
+  background-color: #2d71a5;
+  color: white;
+}
+.appbar-menu-grp-name {
+  padding: 5%;
+  width: inherit;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: rgb(105, 105, 105);
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.appbar-sidebar-icon {
+  color: #a5a5a5;
+}
+.appbar-sidebar-text {
+  color: #4d4d4d;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin: 0 5%;
+}
+
+.water-mark {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  padding: 2%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 900px) {
+  .appbar-menu-root {
+    width: 90%;
+    overflow-y: scroll;
+  }
+  .water-mark {
+    position: relative;
+  }
+}

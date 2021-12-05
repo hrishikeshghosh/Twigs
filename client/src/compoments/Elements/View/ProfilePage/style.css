@@ -1,0 +1,236 @@
+.profile-page-root {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 5% 0;
+}
+.profile-details-root {
+  height: max-content;
+  width: inherit;
+  margin: 2% 20% 2% 20%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  /* background-color: white; */
+  border-radius: 8px;
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07); */
+}
+.profile-picture-holder {
+  padding: 0 16px;
+}
+.profile-page-profile-image {
+  width: 180px;
+  height: 180px;
+}
+.profile-details-holder {
+  padding: 16px;
+  width: 100%;
+}
+.profile-name-box {
+  display: flex;
+  align-items: center;
+}
+.profile-name {
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  word-wrap: break-word;
+}
+.profile-badge {
+  width: 25px;
+  height: 25px;
+  margin-left: 16px;
+}
+.profile-role {
+  font-family: "Open Sans", -apple-system;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 900;
+}
+.profile-description-box {
+  width: 100%;
+  margin: 2% 0 2%;
+}
+.profile-description {
+  font-family: "Open Sans", -apple-system;
+  color: black;
+  font-weight: 800;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+}
+.profile-reach-box {
+  display: flex;
+  align-items: flex-start;
+}
+.content-number,
+.followers-number,
+.following-number {
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.content-text,
+.followers-text,
+.following-text {
+  width: 100%;
+  color: black;
+  margin: 0 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.designation-icon {
+  padding: 8px;
+  color: rgb(141, 140, 140);
+}
+.designation-detail {
+  width: 100%;
+  padding: 1% 0;
+  display: flex;
+}
+.designation-text {
+  margin: 0 2%;
+  font-family: "Open Sans", -apple-system;
+  color: black;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.content-detail,
+.followers-detail,
+.following-detail {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: fit-content;
+}
+.profile-interaction-box {
+  display: flex;
+  align-items: center;
+}
+.profile-interaction-box-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.profile-edit-button {
+  display: flex;
+  align-items: baseline;
+  margin: 0 24px;
+  padding: 5% 10%;
+  outline: none;
+  border: none;
+  background-color: #2977b3;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fandf-container {
+  width: inherit;
+  margin: 0 24px;
+}
+.profile-interaction-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  border: none;
+  outline: none;
+  margin: 0 24px;
+  padding: 5% 10%;
+  background-color: #2977b3;
+  color: whitesmoke;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.profile-interaction-button:hover {
+  background-color: #0a4572;
+}
+.interaction-state {
+  margin-left: 8px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 0.85rem;
+  width: max-content;
+  color: whitesmoke;
+}
+.achiever-text {
+  text-align: center;
+  font-family: "open Sans", -apple-system;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.profile-achievement-box {
+  margin: 0 16px 0 16px;
+}
+
+.profile-share-button:hover {
+  color: #39a6a3;
+}
+.profile-page-loader {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.post-type-router-box {
+  display: flex;
+  align-items: center;
+  margin: 0 20%;
+  justify-content: space-evenly;
+}
+.tablink {
+  width: max-content;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: baseline;
+  outline: none;
+  border: none;
+  color: gray;
+  padding: 1%;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+.active-tab {
+  font-size: 1.1rem;
+  border-top: 1px solid black;
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  .profile-page-root {
+    width: inherit;
+    height: 92vh;
+  }
+  .profile-details-root {
+    width: 100%;
+    margin: 0;
+  }
+  .profile-details-root,
+  .profile-name-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-picture-holder {
+    padding: 5%;
+  }
+  .profile-edit-button {
+    margin: 5% 0;
+  }
+}

@@ -1,0 +1,57 @@
+.lib-right-element-root {
+  background-color: rgb(224, 222, 222);
+
+  border-radius: 5px;
+  position: sticky;
+  position: -webkit-sticky;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 5%;
+  padding: 3%;
+}
+.lib-search-bar-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: baseline;
+  border-bottom: 2px solid rgb(126, 126, 126);
+  padding: 2%;
+  color: rgb(126, 126, 126);
+  transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.lib-search-bar-box:focus-within {
+  border-bottom: 2px solid rgb(42, 42, 42);
+  color: rgb(42, 42, 42);
+}
+.lib-search-bar {
+  padding: 2%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.lib-search-bar::placeholder {
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+.blog-select-box,
+.art-select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7%;
+  cursor: default;
+}
+
+.lib-del-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7%;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.lib-del-btn:hover{
+  background-color: rgba(0,0,0,0.1);
+}

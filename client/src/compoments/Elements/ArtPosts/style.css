@@ -1,0 +1,28 @@
+.art-section-root{
+  width: 100%;
+  height: fit-content;
+  z-index: 0;
+}
+.art-feed{
+  width: inherit;
+  height: 100%;
+  padding: 2% 0;
+  display: -ms-inline-grid;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns:auto auto auto;
+  grid-row-gap: 0.5%;
+  position: relative;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px){
+  .art-feed{
+    padding:2% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

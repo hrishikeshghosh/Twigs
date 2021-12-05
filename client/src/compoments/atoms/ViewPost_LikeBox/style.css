@@ -1,0 +1,83 @@
+.like-box-root {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.like-box-left {
+  display: flex;
+  justify-content: start;
+  flex-grow: 1;
+}
+.like-box-like-section,
+.like-box-dislike-section,
+.like-box-comment-section {
+  margin: 0 3% 0 3%;
+  display: flex;
+  align-items: center;
+}
+.count-text-box {
+  display: flex;
+}
+.like-box-static-texts {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(68, 67, 67);
+  padding: 5px;
+}
+.like-box-count-texts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgb(5, 5, 5);
+  padding: 5px;
+}
+.liked,
+.disliked,
+.fi-rr-comment {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2a6999;
+}
+.unliked,
+.fi-sr-thumbs-down {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2a6999;
+}
+.like-box-right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.post-copyright-text {
+  font-family: "Open Sans", -apple-system;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(102, 102, 102);
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .like-box-like-section,
+  .like-box-dislike-section,
+  .like-box-comment-section {
+    margin: 0;
+  }
+  .fi-rr-thumbs-up,
+  .fi-rr-thumbs-down,
+  .fi-rr-comment {
+    font-size: 0.9rem;
+  }
+  .like-box-count-texts {
+    font-size: 0.8rem;
+  }
+  .like-box-static-texts,
+  .post-copyright-text {
+    font-size: 0.7rem;
+  }
+  .post-copyright-text {
+    text-align: end;
+  }
+}

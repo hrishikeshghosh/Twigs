@@ -1,0 +1,23 @@
+.each-profile-content-root {
+  width: 300px;
+  height: 300px;
+  margin: 1%;
+  position: relative;
+}
+
+.profilebox-detail-box {
+  width: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .each-profile-content-root {
+    width: 100px;
+    height: 100px;
+  }
+}

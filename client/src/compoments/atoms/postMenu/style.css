@@ -1,0 +1,101 @@
+.post-menu-button,
+.post-menu-root {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+  border-radius: 5px;
+}
+
+.post-menu-child {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.post-menu-child::before,
+.post-menu-child::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.post-menu-child::before {
+  transform: translateY(-8px);
+}
+.post-menu-child::after {
+  transform: translateY(8px);
+}
+
+/* BUTTON ANIMATION */
+
+.post-menu-button.open .post-menu-child {
+  transform: translateX(-50%);
+  background: transparent;
+  box-shadow: none;
+}
+.post-menu-button.open .post-menu-child::before {
+  transform: rotate(45deg) translate(8px, -8px);
+}
+.post-menu-button.open .post-menu-child::after {
+  transform: rotate(-45deg) translate(8px, 8px);
+}
+.post-menu-options {
+  position: absolute;
+  bottom: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.post-menu-opt-btns {
+  color: white;
+}
+
+.opt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.opt-name {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  position: absolute;
+  right: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5% 20%;
+  border-radius: 5px;
+}
+
+.opt-1 {
+  transition: all 0.6s ease-in-out;
+}
+
+.opt-2 {
+  transition: all 0.7s ease-in-out;
+}
+
+.opt-3 {
+  transition: all 0.8s ease-in-out;
+}
+
+.opt-4 {
+  transition: all 0.9s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+}

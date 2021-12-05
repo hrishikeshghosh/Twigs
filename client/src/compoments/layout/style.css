@@ -1,0 +1,14 @@
+.layout-root {
+  /* margin-left: 20px;
+    margin-right: 20px; */
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  padding-bottom: 5%;
+}
+@media only screen and (max-width: 720px) {
+
+  
+}
+
+

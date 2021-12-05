@@ -1,0 +1,44 @@
+.left-root {
+  height: inherit;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.info-box-container {
+  height: 90vh;
+  padding: 10% 3%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.info-box-container::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.info-box-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.info-box-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  opacity: 0%;
+}
+.info-box-container:hover::-webkit-scrollbar-thumb {
+  background-color: #b6b4b4;
+}
+
+@media only screen and (max-width: 720px) {
+  .left-root {
+    height: fit-content;
+    overflow: hidden;
+  }
+  .info-box-container{
+    height: fit-content;
+    overflow: hidden;
+  }
+ 
+}
