@@ -2,6 +2,11 @@
 
 A simple Social Media structure where the users can share blogs and arts. Gain followers and Follow people Around! 
 
+
+#Project Files 
+
+Go to the master branch to get project files.
+
 # Frontend Frameworks
 
 I have used React.js to build the front end of the app.
