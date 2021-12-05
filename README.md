@@ -37,4 +37,7 @@ One is a image bucket which is solely dedicated to store images  and send back u
 The other one is the main server which does all the backend jobs.
 As i am using Microservice structure ( and not monolithic structure ), I had to take care of all the CORS rules and elinimate the erros. 
 
+Frontend hosted at: Netlify
+Backend and Bucket hosted at: Heroku
+
 Lastly, The app is my personal Project which is running on very fragile servers ( As free servers are very fragile ). 
