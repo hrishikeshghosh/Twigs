@@ -49,9 +49,5 @@ Backend and Bucket hosted at: Heroku
 Lastly, The app is my personal Project which is running on very fragile servers ( As free servers are very fragile ).
 
 # Screenshot
-![2](https://user-images.githubusercontent.com/66993478/144737984-d301f554-1227-4bdd-846e-fbb8aac00852.png)
-![3](https://user-images.githubusercontent.com/66993478/144737987-9a6a3f54-d7f6-455a-89ad-0e9e634c91a5.png)
-![4](https://user-images.githubusercontent.com/66993478/144737988-6ec591da-465f-43b4-87b7-8d2f3f38cfa5.png)
-![5](https://user-images.githubusercontent.com/66993478/144737989-860abb93-875b-46e5-8b9c-ef8d0c2fc0e1.png)
-![1](https://user-images.githubusercontent.com/66993478/144737990-15e707a1-870d-4cad-be19-f868c3e716ca.png)
+
 
