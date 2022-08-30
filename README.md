@@ -48,6 +48,5 @@ Backend and Bucket hosted at: Heroku
 
 Lastly, The app is my personal Project which is running on very fragile servers ( As free servers are very fragile ).
 
-# Screenshot
 
 
